@@ -1,4 +1,3 @@
-
 var express = require('express');
 var app = express();
 
@@ -17,4 +16,8 @@ app.get('/api/:oruko', function (req, res) {
     });
 });
 
-app.listen(port);
+// app.listen(port);
+
+module.exports.add = (a, b) => {
+    return a + b;
+};
